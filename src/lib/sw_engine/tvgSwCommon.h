@@ -314,6 +314,7 @@ void rleReset(SwRleData* rle);
 void rleClipPath(SwRleData *rle, const SwRleData *clip);
 void rleClipRect(SwRleData *rle, const SwBBox* clip);
 void rleAlphaMask(SwRleData *rle, const SwRleData *clip);
+void rleInvAlphaMask(SwRleData *rle, const SwRleData *clip);
 
 bool mpoolInit(uint32_t threads);
 bool mpoolTerm();

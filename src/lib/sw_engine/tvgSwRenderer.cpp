@@ -117,7 +117,7 @@ struct SwShapeTask : SwTask
              } else if (comp.method == CompositeMethod::AlphaMask) {
                   rleAlphaMask(shape.rle, compShape->rle);
              } else if (comp.method == CompositeMethod::InvAlphaMask) {
-                  // TODO
+                  rleInvAlphaMask(shape.rle, compShape->rle);
              }
         }
     end:
@@ -163,7 +163,7 @@ struct SwImageTask : SwTask
                      } else if (comp.method == CompositeMethod::AlphaMask) {
                          rleAlphaMask(image.rle, compShape->rle);
                      } else if (comp.method == CompositeMethod::InvAlphaMask) {
-                        // TODO
+                         rleInvAlphaMask(image.rle, compShape->rle);
                      }
                 }
             }
